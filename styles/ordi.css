@@ -1,0 +1,51 @@
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "main header";
+    height: 100vh;
+    grid-auto-columns: 60% 40%;
+}
+.menu{
+    right: 0;
+}
+header{
+    height: 100vh;
+    grid-area: header;
+    border-bottom-left-radius: 20%;
+}
+header>img{
+    width: 80%;
+    transform: translate(-100%,-50%);
+}
+.intro{
+    grid-area: main;
+}
+.intro>h1{
+    font-size:65px ;
+    text-align: left;
+    margin-left: 15%;
+}
+.intro>p{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 15%;
+}
+.flex{
+    margin-top: 55px;
+}
+.flex>div{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

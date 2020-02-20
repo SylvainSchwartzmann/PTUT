@@ -1,0 +1,7 @@
+.container{
+    display: grid;
+    grid-template-areas: 
+    "1 2";
+    grid-template-columns: 50% 50%;
+    margin-top: 0;
+}
