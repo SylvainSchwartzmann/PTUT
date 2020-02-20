@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Recettes fauchées</title>
+        <link rel="stylesheet" href="../styles/page.css">
+        <link rel="stylesheet" media="screen and (min-width: 1000px)" href="../styles/page_ordi.css">
+        <link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
+    </head>
+    <body>
+        <nav>
+            <h1><a href="../index.html">RECETTES</a></h1>
+            <h2><a href="croque.html">ENTREE</a></h2>
+            <h2><a href="quesadilas.html">PLATS</a></h2>
+            <h2><a href="pancake.html">DESSERTS</a></h2>
+            <h1><a href="conseil.html">CONSEILS</a></h1>
+            <h1><a href="blog.html">BLOG</a></h1>
+            <h1><a href="#">NOUS CONTACTER</a></h1>
+        </nav>
+        <div class="menu" onclick="menu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="container">
+            <div class="test">
+                
+                <div class="repas">
+                    <img src="../img/page/pancakes.jpg">                  
+                </div>
+                <div class="bulles">
+                    <img src="../img/page/pancakes.jpg">
+                    <img src="../img/page/pancakes.jpg">
+                    <img src="../img/page/pancakes.jpg">
+                </div>
+            </div>
+            <div class="titre">
+                <h1>Recettes de pancakes au chocolat</h1>
+                <h2>Ingrédients :</h2>
+                <ul>
+                    <li>250g de farine de sarrasin</li>
+                    <li>40g de sucre complet</li>
+                    <li>20g de cacao en poudre</li>
+                    <li>1cc de bicarbonade de soude  (ou de poudre à lever)</li>
+                    <li>1 pincée de sel</li>
+                    <li>500 ml de lait de soja</li>
+                    <li>50ml d'huile neutre + de l'huile pour la poêle</li>
+                </ul>
+                <ol>
+                    <li>Mélangez dans un saladier tous les ingrédeints sec (farine, sucre, cacao, bicarbonade, sel</li>
+                    <li>Ajouter le lait végétal petit à petit tout en mélangeant progressivement avec un fouet. Lorsque le mélange est bien lisse, ajouter l'huile et mélanger encore</li>
+                    <li>Faire chauffer une poêle avec un petit peu d'huile.
+                    </li>
+                    <li>Lorsque la poêle est bien chaude, verser une louche de pâte au centre de la poêle, lorsque des petites bulles se forment sur le dessus du pancake, on peut le retourner.
+                    </li>
+                    <li>On laisse cuire 1 minute environ le deuxième côté, répéter ainsi en pensant à huiler régulièrement la poêle.
+                    </li>
+                    <li>A servir avec des fruits frais, de la pâte a tartiner, de la purée d'amande, saupoudré de copaux de noix de coco, de copeaux de chocolat.</li>
+                </ol>
+            </div>
+        </div>
+        <footer>
+            <div id="perso">
+                <div id="credit">
+                    <p>Credit 2020 - Recettes fauchées<br>
+                        <a href="#header">Retourner en haut </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function menu(){
+				document.querySelector("nav").classList.toggle("ouvert");
+                document.querySelector(".container").classList.toggle("zonehaut");
+			}
+        </script>
+    </body>
+</html>

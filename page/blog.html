@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Recettes fauchées</title>
+        <link rel="stylesheet" href="../styles/page.css">
+        <link rel="stylesheet" media="screen and (min-width: 1000px)" href="../styles/page_ordi.css">
+        <link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
+    </head>
+    <body>
+        <nav>
+            <h1><a href="../index.html">RECETTES</a></h1>
+            <h2><a href="croque.html">ENTREE</a></h2>
+            <h2><a href="quesadilas.html">PLATS</a></h2>
+            <h2><a href="pancake.html">DESSERTS</a></h2>
+            <h1><a href="conseil.html">CONSEILS</a></h1>
+            <h1><a href="blog.html">BLOG</a></h1>
+            <h1><a href="#">NOUS CONTACTER</a></h1>
+        </nav>
+        <div class="menu" onclick="menu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="container">
+            <div class="test">
+                
+                <div class="repas">
+                    <img src="../img/blog.jpg">                  
+                </div>
+                <div class="bulles">
+                        <img src="../img/blog.jpg">
+                        <img src="../img/blog.jpg">
+                        <img src="../img/blog.jpg">
+                    </div>
+            </div>
+            <div class="titre">
+                <h1>Recettes de croque monsieur</h1>
+                <h2>Ingrédients :</h2>
+                <ul>
+                    <li>2 tranches de pain de mie</li>
+                    <li>1 avocat</li>
+                    <li>Mozzarella</li>
+                    <li>1 tomate</li>
+                    <li>Huile d'olive</li>
+                    <li>Beurre</li>
+                    <li>Sel</li>
+                    <li>Poivre</li>
+                </ul>
+                <ol>
+                    <li>Découpez votre avocat et votre tomate en morceaux. Coupez votre boule de mozzarella en tranches.</li>
+                    <li>Chauffez votre poêle à feu moyen.</li>
+                    <li>Beurrez légèrement un côté de vos deux tranches de pain.
+                    </li>
+                    <li>Placez dans un premier temps une tranche dans la poêle.
+                    </li>
+                    <li>Par-dessus, ajoutez l’avocat, la mozzarella et les morceaux de tomate. Versez un peu d’huile d’olive et assaisonnez enfin de sel et de poivre. Refermez le tout avec l'autre tranche
+                    </li>
+                    <li> Dès que le premier côté est doré (au bout de 2-3 minutes environ), retournez et laissez cuire 3 minutes de plus.</li>
+                </ol>
+            </div>
+        </div>
+        <footer>
+            <div id="perso">
+                <div id="credit">
+                    <p>Credit 2020 - Recettes fauchées<br>
+                        <a href="#header">Retourner en haut </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function menu(){
+				document.querySelector("nav").classList.toggle("ouvert");
+                document.querySelector(".container").classList.toggle("zonehaut");
+			}
+        </script>
+    </body>
+</html>
