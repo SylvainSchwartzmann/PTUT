@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Recettes fauchées</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" media="screen and (min-width: 1000px)" href="styles/ordi.css">
+        <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+		<script src="js/main.js" async></script>
+    </head>
+    <body>
+        <nav >
+            <h1>RECETTES</h1>
+            <h2><a href="page/croque.html">ENTREE</a></h2>
+            <h2><a href="page/quesadilas.html">PLATS</a></h2>
+            <h2><a href="page/pancake.html">DESSERTS</a></h2>
+            <h1><a href="page/conseil.html">CONSEILS</a></h1>
+            <h1><a href="page/blog.html">BLOG</a></h1>
+            <h1><a href="#">NOUS CONTACTER</a></h1>
+        </nav>
+        <div class="grid" id="header">
+            <header>
+                <div class="menu" onclick="menu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <img src="img/logo1.png">
+            </header>
+            <section class="intro" >
+                <h1>LES RECETTES FAUCHEES</h1>
+                <p><strong>ipsum dolor sit, amet consectetur.</strong></p>
+                <div class="flex">
+                    <div onclick="document.location.hash='ancre'";>Recettes</div>
+                    <div onclick="document.location.href='page/conseil.html'";>Conseils</div>
+                </div>
+            </section>
+        </div>
+        <section class="slider">
+
+            <div class="container">
+                <div class="slides" id="ancre">
+                    
+                        <img onclick="document.location.href='page/croque.html'";
+                        sizes="(max-width: 800px) 100vw, 800px"
+                        srcset="
+                        img/croque/croque_vngyjq_c_scale,w_200.jpg 200w,
+                        img/croque/croque_vngyjq_c_scale,w_383.jpg 383w,
+                        img/croque/croque_vngyjq_c_scale,w_508.jpg 508w,
+                        img/croque/croque_vngyjq_c_scale,w_638.jpg 638w,
+                        img/croque/croque_vngyjq_c_scale,w_749.jpg 749w,
+                        img/croque/croque_vngyjq_c_scale,w_800.jpg 800w"
+                        src="img/croque/croque_vngyjq_c_scale,w_800.jpg"
+                        alt="">
+                    
+                    
+                        <img src="img/pizza.jpg" onclick="document.location.href='page/pizza.html'";>
+                    
+                        <img src="img/quesadilas.png" onclick="document.location.href='page/quesadilas.html'";>
+                    
+                        <img src="img/pancakes.jpg" onclick="document.location.href='page/pancake.html'";>
+                   
+                    
+                </div>
+            </div>
+            <div class="slider">
+                <span id="l1" onclick="myFunction()" style="color: black;">•</span>
+                <span id="l2" onclick="myunction()">•</span>
+                <span id="l3" onclick="mynction()">•</span>
+                <span id="l4" onclick="myction()">•</span>
+            </div>
+        </section>
+        <div class="blog">
+            <div onclick="document.location.href='page/blog.html'";>
+                <p>Blog</p>
+                <img src="img/blog.jpg">
+            </div>
+        </div>
+        <div class="blog">
+            <div onclick="document.location.href='page/conseil.html'";> 
+                <p>Conseils</p>
+                <img src="img/conseil.jpg">
+                
+            </div> 
+        </div>
+        <footer>
+            <div id="perso">
+                <div id="credit">
+                    <p>Credit 2020 - Recettes fauchées<br>
+                        <a href="#header">Retourner en haut </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function myFunction() {              
+                document.querySelector(".slides").style.transform = "translate(0%)";
+                document.querySelector("#l1").style.color = "black";
+                document.querySelector("#l2").style.color = "grey";
+                document.querySelector("#l3").style.color = "grey";
+                document.querySelector("#l4").style.color = "grey";
+            }
+            function myunction() {
+                document.querySelector(".slides").style.transform = "translate(-25%)";
+                document.querySelector("#l1").style.color = "grey";
+                document.querySelector("#l2").style.color = "black";
+                document.querySelector("#l3").style.color = "grey";
+                document.querySelector("#l4").style.color = "grey";
+            }
+            function mynction() {
+                document.querySelector(".slides").style.transform = "translate(-50%)"; 
+                document.querySelector("#l1").style.color = "grey";
+                document.querySelector("#l2").style.color = "grey";
+                document.querySelector("#l3").style.color = "black";
+                document.querySelector("#l4").style.color = "grey";
+            }     
+            function myction() {
+                document.querySelector(".slides").style.transform = "translate(-75%)";
+                document.querySelector("#l1").style.color = "grey";
+                document.querySelector("#l2").style.color = "grey";
+                document.querySelector("#l3").style.color = "grey";
+                document.querySelector("#l4").style.color = "black";
+            }         
+            function menu(){
+				document.querySelector("nav").classList.toggle("ouvert");
+			}
+
+        </script>
+    </body>
+</html>
