@@ -8,8 +8,16 @@ body{
 a{
     text-decoration: none;
 }
+.flex{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    width:70%; 
+    height:500px;
+}
 nav{
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     background-color: #ff9c41;
     color: white;
@@ -55,7 +63,7 @@ nav a{
     justify-content: center;
 }
 .repas>img{
-    width: 40%;
+    width: 60%;
     border-radius: 50%;
 }
 .bulles{
@@ -64,7 +72,7 @@ nav a{
     justify-content: space-evenly;
 }
 .bulles>img{
-    width: 15%;
+    width: 25%;
     border-radius: 50%;
 }
 .titre>h1{
@@ -115,3 +123,14 @@ footer{
 .zonehaut{
     margin-top: 0;
 }
+.conseil>li{
+    margin-bottom: 5%;
+}
+.ouvertplus{
+    transform: translate(0,-10%);
+}
+.ouvertmoins{
+    transform: translate(0,-8%);
+}
+
+
