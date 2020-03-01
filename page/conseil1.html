@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Recettes fauchées</title>
+        <link rel="stylesheet" href="../styles/page.css">
+        <link rel="stylesheet" media="screen and (min-width: 1000px)" href="../styles/page_ordi.css">
+        <link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
+        <style>
+            .titre>div>p{
+                font-size: 20px;
+                width: 75%;
+            }
+            .titre>h1{
+                margin-top: 8vh;
+            }
+            .titre>div{
+                
+                display: flex;
+                justify-content: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h1><a href="../index.html">RECETTES</a></h1>
+            <h2><a href="entree.html">ENTREE</a></h2>
+            <h2><a href="repas.html">PLATS</a></h2>
+            <h2><a href="pancake.html">DESSERTS</a></h2>
+            <h2><a href="sauce.html">SAUCES</a></h2>
+            <h1><a href="conseil.html">CONSEILS</a></h1>
+            <h1><a href="blog.html">BLOG</a></h1>
+        </nav>
+        <div class="menu" onclick="menu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>            
+            <div class="titre">
+                <h1>Premiers pas dans le zéro déchet…</h1>
+                <div>
+                <p><i>Le zéro déchet ? Qu’est-ce que c’est que ça encore ? Restez !</i> Cette notion mérite toute notre
+                    attention. Il s’agit d’une démarche qui a pour but de réduire au maximum ses déchets. Mais
+                    pourquoi ? On produit, chacun, 568 kilos de déchets par an, c’est deux fois plus qu’il y a
+                    quarante ans. De plus les déchets ne sont plus les mêmes, le plastique nous envahit. Mais ce
+                    n’est pas tout, la collecte et le traitement de ceux-ci demande beaucoup d’énergie sachant
+                    que les déchets vont, finalement, entrainer une pollution de l’air et/ou du sol.
+                    <strong>Voici les 5 premiers gestes à adopter pour réduire vos déchets en plus d’économiser votre
+                    argent. :</strong>
+                    </p>
+            </div>
+                <ol class="conseil">
+                    <li><strong>Laissez tomber les bouteilles d’eau en plastique (au sens figuré bien sûr).</strong> Pensez aux
+                        gourdes ou bouteilles réutilisables. Fini le plastique et l’argent jeté par les fenêtres.</li>
+                    <li>Vous acheter du café aux distributeurs ? <strong>que dans la plupart des machines
+                        vous pouvez utiliser vos propre gobelets ou tasses ?</strong>  Ou vous pouvez aussi pensez à
+                        emmener vos thermos ;)</li>
+                    <li>De même pour vos déjeuner. <strong>Remmenez vos propres repas et vous économiserez les
+                        emballages !</strong> </li>
+                    <li><strong>Gard au gaspillage alimentaire :</strong>  par personnes et uniquement dans les foyers, il revient à
+                        79 kilos par an. Cuisinez vos restes, notez ce que vous avez dans votre frigo et faites la
+                        différence entre DLC (date limite de consommation) et DLUO (date limite d’utilisation
+                        optimale après quoi les produits sont encore consommables) comme sur les boites de
+                        conserves par exemple.</li>
+                    <li><strong>Non, le plastique n’est pas recyclable.</strong> Seulement certains types le sont et pas à l’infini.
+                    Essayer donc de privilégier les autres types d’emballage (le verre ou l’aluminium qui sont
+                    recyclable à l’infini ou presque et le papier/carton qui utilisent peu de ressources).</li>
+                </ol>
+               
+            </div>
+        <footer>
+            <div id="perso">
+                <div id="credit">
+                    <p>Credit 2020 - Recettes fauchées<br>
+                        <a href="../index.html">Retourner à l'acceuil</a><br>
+                        <a href="conseil.html">Retourner aux autres conseils</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function menu(){
+				document.querySelector("nav").classList.toggle("ouvertmoins");
+                document.querySelector("h1").classList.toggle("zonehaut");
+			}
+        </script>
+    </body>
+</html>

@@ -9,14 +9,8 @@
         <link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
         <style>
             h1{
-                margin-top: 10vh;
-            }
-            p{
-                width: 80%;
-            }
-            .fle{
-                display: flex;
-                justify-content: center;
+                text-align: center;
+                margin-top: 6vh;
             }
         </style>
     </head>
@@ -35,20 +29,28 @@
             <div></div>
             <div></div>
         </div>
-        <h1>NOUS SOMMES…</h1>
-        <div class="fle">
-            <p><i>Un autre site de recettes ? Encore ?</i> Non, nous sommes votre site de recettes. Nous sommes
-                là pour vous donner des idées de recettes peu chères mais pas seulement. Nous sommes là
-                pour vous faire économiser de l’argent et vous rendre la vie plus facile. Nous sommes là
-                pour vous motiver à manger plus sainement et à prendre en main votre santé. Nous sommes
-                là pour vous sensibiliser à la protection de l’environnement et pour vous donner les gestes à
-                adopter. <b>Nous sommes là pour vous aujourd’hui, et pour votre lendemain.</b>
-            </p>
+        <h1>Nos recettes d'entrée</h1>
+        <div class="container">
+            <div class="test">
+                <div class="repas">
+                    <img onclick="document.location.href='croque.html'"; src="../img/page/croque.png">                  
+                </div>
+               
+            </div>
+
+            <div class="test">
+                <div class="repas">
+                    <img onclick="document.location.href='pizza.html'"; src="../img/page/pizza.png">                  
+                </div>
+               
+            </div>
+
         </div>
+        
         <footer>
             <div id="perso">
                 <div id="credit">
-                    <p>Credit 2020 - Recettes fauchées
+                    <p>Credit 2020 - Recettes fauchées<br>
                         <a href="../index.html">Retourner à l'acceuil </a>
                     </p>
                 </div>
@@ -56,8 +58,8 @@
         </footer>
         <script>
             function menu(){
-				document.querySelector("nav").classList.toggle("ouvertplus");
-                document.querySelector("h1").classList.toggle("zonehaut");
+				document.querySelector("nav").classList.toggle("ouvertmoins");
+                document.querySelector(".container").classList.toggle("zonehaut");
 			}
         </script>
     </body>
