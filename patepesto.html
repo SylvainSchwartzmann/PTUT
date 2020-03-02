@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Recettes fauchées</title>
+        <link rel="stylesheet" href="../styles/page.css">
+        <link rel="stylesheet" media="screen and (min-width: 1000px)" href="../styles/page_ordi.css">
+        <link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
+    </head>
+    <body>
+        <nav>
+            <h1><a href="../index.html">RECETTES</a></h1>
+            <h2><a href="entree.html">ENTREE</a></h2>
+            <h2><a href="repas.html">PLATS</a></h2>
+            <h2><a href="pancake.html">DESSERTS</a></h2>
+            <h2><a href="sauce.html">SAUCES</a></h2>
+            <h1><a href="conseil.html">CONSEILS</a></h1>
+            <h1><a href="blog.html">BLOG</a></h1>
+        </nav>
+        <div class="menu" onclick="menu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="container">
+            <div class="test">
+                
+                <div class="repas">
+                    <img src="../img/page/patepesto.png">                  
+                </div>
+                <div class="bulles">
+                        <img src="../img/page/farfalle.jpg">
+                        <img src="../img/page/haricot.jpeg">
+                        <img src="../img/page/pesto.jpg">
+                    </div>
+            </div>
+            <div class="titre">
+                <h1>Recettes de pâte pesto</h1>
+                <h2>Ingrédients :</h2>
+                <ul>
+                    <li>500g de pâtes</li>
+                    <li>Sauce pesto</li>
+                    <li>500g d’haricots</li>
+                </ul>
+                <ol>
+                    <li>Faire bouillir de l’eau pour les pâtes.</li>
+                    <li>Lorsque l’eau boue, mettre les pâtes et remuez.</li>
+                    <li>Pendant ce temps mettre un oignon émincé dans une poêle avec de l’huile d’olive.
+                    </li>
+                    <li>Ajoutez les haricots dans la poêle. Bien mélanger.
+                    </li>
+                    <li>Lorsque les pâtes sont cuites, ajoutez les haricots et la sauce pesto.
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="flex">
+            <iframe  src="https://www.youtube.com/embed/rC7rrRtCKf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <footer>
+            <div id="perso">
+                <div id="credit">
+                    <p>Credit 2020 - Recettes fauchées<br>
+                        <a href="../index.html">Retourner à l'acceuil </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function menu(){
+				document.querySelector("nav").classList.toggle("ouvert");
+                document.querySelector(".container").classList.toggle("zonehaut");
+			}
+        </script>
+    </body>
+</html>
